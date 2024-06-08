@@ -2,7 +2,7 @@ import random
 import time
 
 MAX_LINES = 3
-MAX_BET = 1000000000
+MAX_BET = 10000000000
 MIN_BET = 10
 
 ROWS = 3
@@ -185,6 +185,14 @@ def main():
         time.sleep(0.5)
         print("═══════════════════════════════")
         time.sleep(0.5)
+        
+        
+        if balance == 0:
+            (f"\n═══════════════════════════════")
+            print("\nyou ran out of money. Goodbye! :D hope to see you soon!!")
+            (f"═══════════════════════════════")
+            break
+        
         spin = input("\nPress Enter to spin (q to quit): ")
         while spin.lower() != "q" and spin != "":
             spin = input("\nPress Enter to spin (q to quit): ")

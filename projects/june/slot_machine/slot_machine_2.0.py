@@ -78,11 +78,11 @@ def print_slot_machine(columns):
 
 def animate_slot_machine():
     temp_symbols = ["A", "B", "C", "D", "E", "F", "G", "H"]
-    for _ in range(20):  # Number of animation frames
+    for _ in range(20):  # number of animation frames
         columns = [[random.choice(temp_symbols) for _ in range(ROWS)] for _ in range(COLS)]
         print_slot_machine(columns)
         time.sleep(0.35)
-        print("\033[F" * (ROWS + 2), end="")  # Move cursor up to overwrite previous lines
+        print("\033[F" * (ROWS + 2), end="")  # move cursor up to overwrite previous lines
 
 def deposit():
     while True:
@@ -109,6 +109,7 @@ def get_lines():
         else:
             print("Enter a valid number.")
     print("═══════════════════════════════")
+    
 
 def get_bet():
     while True:
@@ -178,6 +179,14 @@ def main():
         print(f"\n═══════════════════════════════")
         print(f"Current balance: ${balance}")
         print("═══════════════════════════════")
+        
+        
+        if balance == 0:
+            (f"\n═══════════════════════════════")
+            print("\nyou ran out of money. Goodbye! :D hope to see you soon!!")
+            (f"═══════════════════════════════")
+            break
+        
         spin = input("Press Enter to spin (q to quit): ")
         while spin.lower() != "q" and spin != "":
             spin = input("Press Enter to spin (q to quit): ")
