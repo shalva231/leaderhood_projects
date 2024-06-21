@@ -2,12 +2,12 @@
 fitness_criterion     = max
 fitness_threshold     = 100
 pop_size              = 20
-reset_on_extinction   = False
+reset_on_extinction   = True
 
 [DefaultGenome]
 # node activation options
 activation_default      = tanh
-activation_mutate_rate  = 0.0
+activation_mutate_rate  = 0.2
 activation_options      = tanh
 
 # node aggregation options
@@ -22,7 +22,7 @@ bias_max_value          = 30.0
 bias_min_value          = -30.0
 bias_mutate_power       = 0.5
 bias_mutate_rate        = 0.7
-bias_replace_rate       = 0.1
+bias_replace_rate       = 0.2
 
 # genome compatibility options
 compatibility_disjoint_coefficient = 1.0
@@ -71,10 +71,9 @@ compatibility_threshold = 3.0
 
 [DefaultStagnation]
 species_fitness_func = max
-max_stagnation       = 20
-species_elitism      = 2
+max_stagnation       = 15
+species_elitism      = 5
 
 [DefaultReproduction]
-elitism            = 2
-survival_threshold = 0.1
-min_species_size = 1
+elitism            = 5
+survival_threshold = 0.2
