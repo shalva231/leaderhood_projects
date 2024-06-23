@@ -148,6 +148,8 @@ def game(balance):
     print_slot_machine(columns)
     winnings, winning_lines = check_winnings(columns, lines, bet, symbol_value)
     time.sleep(0.5)
+    balance += winnings
+    
     print(f"\n═══════════════════════════════")
     time.sleep(1)
     print(f"You won ${winnings}!")
