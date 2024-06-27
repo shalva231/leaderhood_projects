@@ -9,6 +9,5 @@ pyautogui.leftClick(x=622, y=998,duration=1)
 
 for i in range(100):
     time.sleep(1)
-    pyautogui.typewrite("GOA THE BEST")
+    pyautogui.typewrite("GOATHEBEST")
     pyautogui.hotkey("enter")
-    
