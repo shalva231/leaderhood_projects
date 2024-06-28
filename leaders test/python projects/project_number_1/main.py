@@ -157,6 +157,7 @@ def main(exit):
         elif act.lower() == "list":
             view_list() 
         elif act.lower() == "quit":
+            print("bye bye")
             exit = True
         
         
