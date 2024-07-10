@@ -11,3 +11,4 @@ for i in range(100):
     time.sleep(1)
     pyautogui.typewrite("GOATHEBEST")
     pyautogui.hotkey("enter")
+    

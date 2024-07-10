@@ -203,7 +203,7 @@ def main():
     obstacles = []
     death_count = 0
     points = 0
-    game_speed = 10  # Start with initial game speed
+    game_speed = 20  # Start with initial game speed
     x_pos_bg = 0  # Initialize x_pos_bg
     y_pos_bg = 380  # Initialize y_pos_bg
 

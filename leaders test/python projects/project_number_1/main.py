@@ -6,6 +6,7 @@ BALANCE = 0
 ACCOUNTS = []
 PASSWORDS = []
 
+
 def create_account():
     global username
     global password
