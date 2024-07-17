@@ -77,6 +77,5 @@ while True:
     cv2.putText(img, "volume: "+str(int(PERC))+"%", (40,450), cv2.FONT_HERSHEY_COMPLEX, 2, (255, 200, 40),3) 
         
         
-        
     cv2.imshow("shalva", img)
     cv2.waitKey(1)
