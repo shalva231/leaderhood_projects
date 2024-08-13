@@ -1,5 +1,9 @@
-import pyautogui
-import time
-
-time.sleep(5)
-print(pyautogui.position())
+for i in range(100):
+    print(i)
+    if 3 * i:
+        print("Fizz")
+    if 5 * i:
+        print("Buzz")
+    if 3 * i and 5 * i:
+        print("FizzBuzz")
+    

@@ -9,25 +9,19 @@ ROWS = 3
 COLS = 3
 
 symbol_count = {
-    "A": 2,
-    "B": 4,
-    "C": 5,
-    "D": 7,
-    "E": 7,
-    "F": 8,
-    "G": 8,
-    "H": 8,
+    "7": 2,
+    "4": 4,
+    "3": 5,
+    "2": 7,
+    "1": 8,
 }
 
 symbol_value = {
-    "A": 50,
-    "B": 10,
-    "C": 5,
-    "D": 2,
-    "E": 2,
-    "F": 1.5,
-    "G": 1.5,
-    "H": 1.5,
+    "7": 50,
+    "4": 10,
+    "3": 5,
+    "2": 2,
+    "1": 1.5,
 }
 
 def check_winnings(columns, lines, bet, values):
@@ -77,7 +71,7 @@ def print_slot_machine(columns):
     print("╚═══════════╝")
 
 def animate_slot_machine():
-    temp_symbols = ["A", "B", "C", "D", "E", "F", "G", "H"]
+    temp_symbols = [7,1,2,3,4,5,6,8,9]
     for _ in range(20):  # number of animation frames
         columns = [[random.choice(temp_symbols) for _ in range(ROWS)] for _ in range(COLS)]
         print_slot_machine(columns)
