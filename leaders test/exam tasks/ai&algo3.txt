@@ -1,0 +1,7 @@
+Write python program that will turn decimal number into binary number.
+
+Test Cases:
+32 -> 100000
+31 -> 11111
+8 -> 1000
+

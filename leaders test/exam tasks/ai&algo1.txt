@@ -1,0 +1,10 @@
+Write what will be dot product of two vectors?
+
+1: [1, 2, 3] x [4, 5, 6]
+2: [2, 3] x [4, 5]
+3: [7, -2, 5] x [3, 4, 6]
+
+
+90
+45
+130
