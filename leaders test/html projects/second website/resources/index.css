@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cursive, serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: rgb(59,133,100);
+    background: radial-gradient(circle, rgba(59,133,100,1) 0%, rgba(14,37,27,1) 68%, rgba(0,0,0,1) 100%);
+    color: rgb(8, 39, 0);
+}
+h1 {
+    margin-top: 40px;
+}
+label {
+    font-size: 20px;
+    font-weight: 3px;
+}
+
+.form-container {
+    width: 350px;
+    height: 400px;
+    background: rgba(28, 34, 31, 0.473);
+    background: linear-gradient(135deg, rgba(0, 131, 72, 0.397) 0%, rgba(0,92,52,0.6503686797752809) 100%, rgba(0, 0, 0, 0.384) 100%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(12, 58, 0)    
+}
+
+form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 100px;
+    margin-top: 20px;
+}
+
+input {
+    width: 250px;
+    padding: 50px, 0px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+
+button {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 8px;
+    width: 100px;
+    transition: 0.5s;
+    background-image: linear-gradient(
+        120deg,
+        hsl(192, 70%, 51%),
+        hsl(136, 65%, 51%)
+    );
+}
+button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px, hsla(192, 100%, 50%, 0.664);
+}
