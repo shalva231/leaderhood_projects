@@ -98,8 +98,6 @@ while True:
     # Wait for the solution
     time.sleep(10)
     pyautogui.moveRel(0, -100) 
-    
-    Try:
         
     
     while True:
