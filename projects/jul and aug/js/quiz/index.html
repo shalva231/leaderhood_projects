@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>quiz</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz" id="quiz">
+      <header>Quiz</header>
+
+      <div class="q1" id="q1">
+        <p>What does HTML stand for?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">
+            1. Hypertext Merge Label
+          </button>
+          <button class="b" onclick="incorrect()">
+            2. Hyperlink Meta-link Language
+          </button>
+          <button class="c" onclick="incorrect()">
+            3. Hyperlink Markup Language
+          </button>
+          <button class="d" onclick="correct()">
+            4. Hypertext Markup Language
+          </button>
+        </div>
+      </div>
+
+      <div class="q2" id="q2">
+        <p>Is Python a dynamic language?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. No</button>
+          <button class="b" onclick="incorrect()">
+            2. No, Python is a snake
+          </button>
+          <button class="c" onclick="incorrect()">3. Maybe IDK</button>
+          <button class="d" onclick="correct()">4. Yes</button>
+        </div>
+      </div>
+
+      <div class="q3" id="q3">
+        <p>What does CSS stand for?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">
+            1. Cascading Scribble Sheets
+          </button>
+          <button class="b" onclick="correct()">
+            2. Cascading Style Sheet
+          </button>
+          <button class="c" onclick="incorrect()">
+            3. Cascading Style Sheets
+          </button>
+          <button class="d" onclick="incorrect()">
+            4. Cascading Scribble Language
+          </button>
+        </div>
+      </div>
+
+
+      <div class="q4" id="q4">
+        <p>Which tag is used to create a hyperlink in HTML?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;link&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;href&gt;</button>
+          <button class="c" onclick="correct()">3. &lt;a&gt;</button>
+          <button class="d" onclick="incorrect()">4. &lt;h1&gt;</button>
+        </div>
+      </div>
+
+      <div class="q5" id="q5">
+        <p>Which CSS property is used to change the background color?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. color</button>
+          <button class="b" onclick="correct()">2. background-color</button>
+          <button class="c" onclick="incorrect()">3. background</button>
+          <button class="d" onclick="incorrect()">4. bgcolor</button>
+        </div>
+      </div>
+
+      <div class="q6" id="q6">
+        <p>What is the correct syntax for a function in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">
+            1. function function_name()
+          </button>
+          <button class="b" onclick="incorrect()">
+            2. function_name function()
+          </button>
+          <button class="c" onclick="incorrect()">
+            3. def function_name[]:
+          </button>
+          <button class="d" onclick="correct()">4. def function_name()</button>
+        </div>
+      </div>
+
+      <div class="q7" id="q7">
+        <p>How do you create a comment in HTML?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. # Comment</button>
+          <button class="b" onclick="incorrect()">
+            2. &lt;comment&gt; Comment &lt;/comment&gt;
+          </button>
+          <button class="c" onclick="incorrect()">3. // Comment</button>
+          <button class="d" onclick="correct()">
+            4. &lt;!-- Comment --&gt;
+          </button>
+        </div>
+      </div>
+
+      <div class="q8" id="q8">
+        <p>How do you create a variable in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">
+            1. variable_name = value
+          </button>
+          <button class="b" onclick="incorrect()">
+            2. var variable_name = value
+          </button>
+          <button class="c" onclick="incorrect()">
+            3. let variable_name = value
+          </button>
+          <button class="d" onclick="correct()">
+            4. int variable_name = value
+          </button>
+        </div>
+      </div>
+
+      <div class="q9" id="q9">
+        <p>Which HTML tag is used to define an internal style sheet?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;script&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;css&gt;</button>
+          <button class="c" onclick="correct()">3. &lt;style&gt;</button>
+          <button class="d" onclick="incorrect()">4. &lt;link&gt;</button>
+        </div>
+      </div>
+
+      <div class="q10" id="q10">
+        <p>What is the correct way to write a Python list?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. {1, 2, 3}</button>
+          <button class="b" onclick="correct()">2. [1, 2, 3]</button>
+          <button class="c" onclick="incorrect()">3. (1, 2, 3)</button>
+          <button class="d" onclick="incorrect()">4. &lt;1, 2, 3&gt;</button>
+        </div>
+      </div>
+
+      <div class="q11" id="q11">
+        <p>Which CSS property is used to change the text color?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. text-color</button>
+          <button class="b" onclick="incorrect()">2. font-color</button>
+          <button class="c" onclick="correct()">3. color</button>
+          <button class="d" onclick="incorrect()">4. text-style</button>
+        </div>
+      </div>
+
+      <div class="q12" id="q12">
+        <p>What does the 'div' tag in HTML represent?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. A hyperlink</button>
+          <button class="b" onclick="correct()">
+            2. A division or section
+          </button>
+          <button class="c" onclick="incorrect()">3. A table cell</button>
+          <button class="d" onclick="incorrect()">4. A list item</button>
+        </div>
+      </div>
+
+      <div class="q13" id="q13">
+        <p>How do you add a comment in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. // Comment</button>
+          <button class="b" onclick="incorrect()">
+            2. &lt;!-- Comment --&gt;
+          </button>
+          <button class="c" onclick="incorrect()">3. /** Comment **/</button>
+          <button class="d" onclick="correct()">4. # Comment</button>
+        </div>
+      </div>
+
+      <div class="q14" id="q14">
+        <p>Which HTML element is used to define the title of a document?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;head&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;meta&gt;</button>
+          <button class="c" onclick="correct()">3. &lt;title&gt;</button>
+          <button class="d" onclick="incorrect()">4. &lt;header&gt;</button>
+        </div>
+      </div>
+
+      <div class="q15" id="q15">
+        <p>What does the 'input' tag in HTML do?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">
+            1. Defines a hyperlink
+          </button>
+          <button class="b" onclick="incorrect()">2. Embeds an image</button>
+          <button class="c" onclick="correct()">
+            3. Creates a user input field
+          </button>
+          <button class="d" onclick="incorrect()">4. Inserts a video</button>
+        </div>
+      </div>
+
+      <div class="q16" id="q16">
+        <p>What is the correct syntax to create a class in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="correct()">1. class ClassName:</button>
+          <button class="b" onclick="incorrect()">2. class ClassName[]</button>
+          <button class="c" onclick="incorrect()">3. def ClassName:</button>
+          <button class="d" onclick="incorrect()">
+            4. function ClassName:
+          </button>
+        </div>
+      </div>
+
+      <div class="q17" id="q17">
+        <p>Which CSS property controls the text size?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. text-size</button>
+          <button class="b" onclick="correct()">2. font-size</button>
+          <button class="c" onclick="incorrect()">3. size</button>
+          <button class="d" onclick="incorrect()">4. font-weight</button>
+        </div>
+      </div>
+
+      <div class="q18" id="q18">
+        <p>Which HTML tag is used to define an unordered list?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;ol&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;li&gt;</button>
+          <button class="c" onclick="correct()">3. &lt;ul&gt;</button>
+          <button class="d" onclick="incorrect()">4. &lt;list&gt;</button>
+        </div>
+      </div>
+      <div class="q19" id="q19">
+        <p>How do you start a while loop in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. while (condition)</button>
+          <button class="b" onclick="incorrect()">2. while {condition}</button>
+          <button class="c" onclick="correct()">3. while condition:</button>
+          <button class="d" onclick="incorrect()">4. while condition[]</button>
+        </div>
+      </div>
+
+      <div class="q20" id="q20">
+        <p>Which HTML tag is used for the largest heading?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;h6&gt;</button>
+          <button class="b" onclick="correct()">2. &lt;h1&gt;</button>
+          <button class="c" onclick="incorrect()">3. &lt;h3&gt;</button>
+          <button class="d" onclick="incorrect()">4. &lt;h2&gt;</button>
+        </div>
+      </div>
+
+      <div class="q21" id="q21">
+        <p>Which HTML attribute is used to define inline styles?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. class</button>
+          <button class="b" onclick="correct()">2. style</button>
+          <button class="c" onclick="incorrect()">3. styles</button>
+          <button class="d" onclick="incorrect()">4. font</button>
+        </div>
+      </div>
+
+      <div class="q22" id="q22">
+        <p>How do you define a block of code in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="correct()">1. Indentation</button>
+          <button class="b" onclick="incorrect()">2. Curly braces</button>
+          <button class="c" onclick="incorrect()">3. Parentheses</button>
+          <button class="d" onclick="incorrect()">4. Square brackets</button>
+        </div>
+      </div>
+
+      <div class="q23" id="q23">
+        <p>What is the default display value of a 'div' element in CSS?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. inline</button>
+          <button class="b" onclick="incorrect()">2. flex</button>
+          <button class="c" onclick="incorrect()">3. inline-block</button>
+          <button class="d" onclick="correct()">4. block</button>
+        </div>
+      </div>
+
+      <div class="q24" id="q24">
+        <p>What does the 'input' tag in HTML do?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">
+            1. Defines a hyperlink
+          </button>
+          <button class="b" onclick="incorrect()">2. Embeds an image</button>
+          <button class="c" onclick="correct()">
+            3. Creates a user input field
+          </button>
+          <button class="d" onclick="incorrect()">4. Inserts a video</button>
+        </div>
+      </div>
+
+      <div class="q25" id="q25">
+        <p>How do you define a list in HTML?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;item&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;list&gt;</button>
+          <button class="c" onclick="correct()">
+            3. &lt;ul&gt; or &lt;ol&gt;
+          </button>
+          <button class="d" onclick="incorrect()">4. &lt;li&gt;</button>
+        </div>
+      </div>
+
+      <div class="q26" id="q26">
+        <p>Which attribute is used to create a tooltip in HTML?</p>
+        <div class="answers">
+          <button class="a" onclick="correct()">1. title</button>
+          <button class="b" onclick="incorrect()">2. alt</button>
+          <button class="c" onclick="incorrect()">3. tooltip</button>
+          <button class="d" onclick="incorrect()">4. hint</button>
+        </div>
+      </div>
+
+      <div class="q27" id="q27">
+        <p>How do you write an IF statement in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. if (condition)</button>
+          <button class="b" onclick="incorrect()">2. if {condition}</button>
+          <button class="c" onclick="incorrect()">3. if condition[]</button>
+          <button class="d" onclick="correct()">4. if condition:</button>
+        </div>
+      </div>
+
+      <div class="q28" id="q28">
+        <p>Which CSS property is used to create space between elements?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. padding</button>
+          <button class="b" onclick="incorrect()">2. spacing</button>
+          <button class="c" onclick="incorrect()">3. border</button>
+          <button class="d" onclick="correct()">4. margin</button>
+        </div>
+      </div>
+
+      <div class="q29" id="q29">
+        <p>Which tag is used to create a dropdown list in HTML?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;dropdown&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;option&gt;</button>
+          <button class="c" onclick="correct()">3. &lt;select&gt;</button>
+          <button class="d" onclick="incorrect()">4. &lt;list&gt;</button>
+        </div>
+      </div>
+
+      <div class="q30" id="q30">
+        <p>Which HTML tag is used to define an image?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;pic&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;src&gt;</button>
+          <button class="c" onclick="incorrect()">3. &lt;image&gt;</button>
+          <button class="d" onclick="correct()">4. &lt;img&gt;</button>
+        </div>
+      </div>
+
+      <div class="q31" id="q31">
+        <p>Which CSS property is used to align text?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. align</button>
+          <button class="b" onclick="incorrect()">2. align-text</button>
+          <button class="c" onclick="correct()">3. text-align</button>
+          <button class="d" onclick="incorrect()">4. text-align</button>
+        </div>
+      </div>
+
+      <div class="q32" id="q32">
+        <p>How do you create a loop in Python?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. loop i in range(10):</button>
+          <button class="b" onclick="incorrect()">2. while i in range(10):</button>
+          <button class="c" onclick="incorrect()">3. for (i = 0; i &gt; 10; i++)</button>
+          <button class="d" onclick="correct()">4. for i in range(10):</button>
+        </div>
+      </div>
+
+      <div class="q33" id="q33">
+        <p>What is the correct way to include external CSS in HTML?</p>
+        <div class="answers">
+          <button class="a" onclick="incorrect()">1. &lt;stylesheet&gt; style.css &lt;/stylesheet&gt;</button>
+          <button class="b" onclick="incorrect()">2. &lt;css src="style.css"&gt;</button>
+          <button class="c" onclick="incorrect()">3. &lt;style src="style.css"&gt;</button>
+          <button class="d" onclick="correct()">4. &lt;link rel="stylesheet" href="style.css"&gt;</button>
+        </div>
+      </div>
+
+
+    <!-- correct popup -->
+    <div class="correct" id="corr">
+      <p>CORRECT</p>
+    </div>
+
+    <!-- incorrect popup-->
+    <div class="incorrect" id="incorr">
+      <p>INCORRECT</p>
+    </div>
+
+    <!-- final score -->
+    <div class="final-score" id="fs">
+      <p id="fsp">Final Score: -/33</p>
+    </div>
+    <script>
+      let num = 1;
+      let question = document.getElementById("q" + num);
+      let popc = document.getElementById("corr");
+      let popi = document.getElementById("incorr");
+      let score = 0;
+
+      function correct() {
+        score++;
+
+        popc.style.opacity = 1;
+        popc.style.zIndex = 1;
+        setTimeout(() => {
+          question.style.opacity = 0;
+          question.style.zIndex = -1;
+          setTimeout(() => {
+            num++;
+            question = document.getElementById("q" + num);
+            if (question) {
+              question.style.opacity = 1;
+              question.style.zIndex = 1;
+            } else {
+              document.getElementById("quiz").style.opacity = 0;
+              document.getElementById("fs").style.opacity = 1;
+              document.getElementById("fs").style.zIndex = 1;
+              document.getElementById("fsp").textContent = `Final Score: ${score}/33`;
+            }
+            setTimeout(() => {
+              popc.style.opacity = 0;
+              popc.style.zIndex = -1;
+            }, 1000);
+          });
+        }, 1000);
+      }
+
+      function incorrect() {
+        popi.style.opacity = 1;
+        popi.style.zIndex = 1;
+        setTimeout(() => {
+          question.style.opacity = 0;
+          question.style.zIndex = -1;
+          setTimeout(() => {
+            num++;
+            question = document.getElementById("q" + num);
+            if (question) {
+              question.style.opacity = 1;
+              question.style.zIndex = 1;
+            } else {
+              document.getElementById("fs").style.opacity = 1;
+              document.getElementById("fs").style.zIndex = 1;
+              document.getElementById(
+                "fsp"
+              ).textContent = `Final Score: ${score}/33`;
+            }
+            setTimeout(() => {
+              popi.style.opacity = 0;
+              popi.style.zIndex = -1;
+            }, 1000);
+          }, 1000);
+        }, 1000);
+      }
+    </script>
+  </body>
+</html>
