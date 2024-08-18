@@ -1,4 +1,4 @@
-import cv2
+from cv2 import *
 cap = cv2.VideoCapture(0)
 while True:
     success, img = cap.read()
@@ -7,3 +7,5 @@ while True:
     cv2.resizeWindow("goa the best", 125, 105) 
     cv2.imshow("goa the best", img) 
     cv2.waitKey(1) 
+
+print("hello world!")
