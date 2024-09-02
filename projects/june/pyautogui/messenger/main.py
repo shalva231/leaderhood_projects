@@ -1,8 +1,8 @@
 import pyautogui
 import time
 
-time.sleep(1)
+time.sleep(2)
 
-for _ in range(200):
-    pyautogui.typewrite("nino how are you?")
+for _ in range(50):
+    pyautogui.typewrite("luka")
     pyautogui.press("enter")

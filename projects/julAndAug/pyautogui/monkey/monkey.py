@@ -3,7 +3,7 @@ import os
 import time
 
 monkey = os.path.join(r"C:\Users\er555\Desktop\leaderhood_projects\projects\july\pyautogui\monkey", "monkey.png")
-text = os.path.join(r"C:\Users\er555\Desktop\leaderhood_projects\projects\july\pyautogui\monkey", "text.png")
+text = os.path.join(r"C:\Users\er555\Desktop\leaderhood_projects\projects\july\pyautogui\monkey", "text2.png")
 
 location = pyautogui.locateOnScreen(monkey)
 if location:
