@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="css/table.css" />
+    </head>
+    <body>
+        <div id="mod">
+            <button onclick="addRow()">add</button>
+        </div>
+        <table id="infoTable" border="solid">
+            <thead>
+                <tr>
+                    <th>msng par</th>
+                    <th>მშობლის სახელი გვარი</th>
+                    <th>fb par</th>
+                    <th>ბავშვის სახელი გვარი</th>
+                    <th>msng kid</th>
+                    <th>age</th>
+                    <th>რაზმის ლიდერი</th>
+                    <th>ქულა</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        https://www.facebook.com/messages/e2ee/t/7030132090447376
+                    </td>
+                    <td>მაკა მოსიაშვილი</td>
+                    <td>none</td>
+                    <td>ცოტნე ბაჯელიძე</td>
+                    <td>https://www.facebook.com/messages/t/100071524246153</td>
+                    <td>14</td>
+                    <td>შალვა შუბითიძე</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>
+                        https://www.facebook.com/messages/e2ee/t/7030132090447376
+                    </td>
+                    <td>მაკა მოსიაშვილი</td>
+                    <td>none</td>
+                    <td>ცოტნე ბაჯელიძე</td>
+                    <td>https://www.facebook.com/messages/t/100071524246153</td>
+                    <td>14</td>
+                    <td>შალვა შუბითიძე</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>
+                        https://www.facebook.com/messages/e2ee/t/7030132090447376
+                    </td>
+                    <td>მაკა მოსიაშვილი</td>
+                    <td>none</td>
+                    <td>ცოტნე ბაჯელიძე</td>
+                    <td>https://www.facebook.com/messages/t/100071524246153</td>
+                    <td>14</td>
+                    <td>შალვა შუბითიძე</td>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <td>
+                        https://www.facebook.com/messages/e2ee/t/7030132090447376
+                    </td>
+                    <td>მაკა მოსიაშვილი</td>
+                    <td>none</td>
+                    <td>ცოტნე ბაჯელიძე</td>
+                    <td>https://www.facebook.com/messages/t/100071524246153</td>
+                    <td>14</td>
+                    <td>შალვა შუბითიძე</td>
+                    <td>40</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <script>
+            let moderator;
+            function validatePassword() {
+                const password = prompt("enter a mod password: ");
+
+                if (password == "123") {
+                    moderator = true;
+                } else {
+                    moderator = false;
+                }
+            }
+            validatePassword();
+
+            let mod = document.getElementById("mod");
+            if (!moderator) {
+                mod.style.opacity = "0";
+            }
+
+            function addRow() {
+                const parMsg = prompt("enter the parents messenger: ");
+                const parName = prompt("enter the parents name: ");
+                const parFb = prompt("enter the parents facebook: ");
+                const kidName = prompt("enter the kids name: ");
+                const kidFb = prompt("enter the kids fb: ");
+                const kidAge = prompt("enter the kids age: ");
+                const leader = prompt("enter the leaders name: ");
+                const score = prompt("enter the kids score: ");
+
+                if (
+                    !parMsg ||
+                    !parName ||
+                    !parFb ||
+                    !kidName ||
+                    !kidFb ||
+                    !leader ||
+                    !score
+                ) {
+                    alert("all fields must be filled out ");
+                }
+
+                const table = document.getElementById("infoTable");
+
+                const newRow = table.insertRow();
+
+                newRow.insertCell(0).innerHtml = parMsg;
+                newRow.insertCell(1).innerHtml = parName;
+                newRow.insertCell(2).innerHtml = parFb;
+                newRow.insertCell(3).innerHtml = kidName;
+                newRow.insertCell(4).innerHtml = kidFb;
+                newRow.insertCell(5).innerHtml = kidAge;
+                newRow.insertCell(6).innerHtml = leader;
+                newRow.insertCell(7).innerHtml = score;
+            }
+        </script>
+    </body>
+</html>
